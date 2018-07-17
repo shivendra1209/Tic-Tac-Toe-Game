@@ -1,11 +1,4 @@
 
-# coding: utf-8
-
-# Funtion to print board
-
-# In[1]:
-
-
 from IPython.display import clear_output
 board=[]
 def display_board(board):
@@ -20,9 +13,6 @@ def display_board(board):
 
 # function take input X or O from player 
 
-# In[2]:
-
-
 def take_input():
     marker=''
     
@@ -36,7 +26,6 @@ def take_input():
     
 
 
-# In[4]:
 
 
 def place_marker(board, marker, position):
@@ -44,9 +33,6 @@ def place_marker(board, marker, position):
 
 
 # Function to check if any player won 
-
-# In[5]:
-
 
 def win_check(board,mark):
     
@@ -57,9 +43,6 @@ def win_check(board,mark):
 
 # function to start from any random player
 
-# In[6]:
-
-
 import random
 
 def choose_first():
@@ -69,14 +52,12 @@ def choose_first():
         return 'Player_2'
 
 
-# In[8]:
 
 
 def space_check(board,position):
     return board[position] == ' '
 
 
-# In[9]:
 
 
 def full_board_check(board):
@@ -86,7 +67,7 @@ def full_board_check(board):
     return True
 
 
-# In[10]:
+
 
 
 def take_position(board):
@@ -108,7 +89,7 @@ def replay():
         return False
 
 
-# In[ ]:
+
 
 
 print('********WELCOME TO THE TIC TAC TOE GAME********')
